@@ -1,0 +1,111 @@
+
+
+.custom-border {
+    background-color: white;
+    width: 50%;
+    margin: 100px auto;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #333333;
+    align-items: center;
+}
+
+
+.btn-al {
+ 
+    margin-top: 20px;
+   margin-right: 10px;
+
+  
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Adjust width */
+    height: 20px; /* Adjust height */
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px; /* Match height for round shape */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Adjust size */
+    width: 16px; /* Adjust size */
+    left: 2px; /* Adjust position */
+    bottom: 2px; /* Adjust position */
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%; /* Make it round */
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px); /* Match slider width */
+  }
+
+  
+body.dark{
+    --primary-color : #fff;
+    --secomdary-color : #000;
+    
+}
+
+body.dark{
+    background: var(--secomdary-color);
+    color: var(--primary-color);
+    
+    
+}
+h2 {
+    color:  var(--secomdary-color);
+}
+body{
+    transition: all 0.3s ease-in;
+    
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+@media (max-width: 768px) {
+    /* Adjust the navbar toggler position */
+    .navbar-toggler {
+        order: -1; /* Move toggler to the left */
+        
+    }
+    .order-lg-2 {
+      order: 2;}
+
+    /* Center the switch vertically */
+    .switch {
+        margin-top: 8px; /* Adjust as needed */
+    }
+}
+
+

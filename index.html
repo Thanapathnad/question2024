@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://thanapathnad.github.io/mypage2024/">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-md-auto align-self-center">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                    <label class="switch navbar-nav ml-md-auto">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <br>
+
+
+
+
+
+    </div>
+    <div class="border custom-border mt-5">
+        <div class="container fluid">
+            <div class="col-md-auto text-center">
+                <h2>PIM ย่อมาจากอะไร ?</h2>
+            </div>
+            <div class="row d-flex flex-wrap justify-content-center">
+                <div class="col-mt-2 btn-al">
+                    <button type="button" class="btn btn-primary" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+                </div>
+                <div class="col-mt-2 btn-al">
+                    <button type="button" class="btn btn-primary" onclick="checkAnswer('b')">B) พิม</button>
+                </div>
+                <div class="col-mt-2 btn-al">
+                    <button type="button" class="btn btn-primary" onclick="checkAnswer('c')">C) ปิ๋ม</button>
+                </div>
+                <div class="col-mt-2 btn-al">
+                    <button type="button" class="btn btn-primary" onclick="checkAnswer('d')">D) อิม</button>
+                </div>
+            </div>
+            <br>
+            <center>
+                <p id="result"></p>
+            </center>
+
+        </div>
+    </div>
+
+
+
+    <div class="border custom-border mt-5">
+        <div class="container fluid">
+            <div class="col-md-auto text-center">
+                <h2>โกซอฟท์ เขียนยังไง?</h2>
+            </div>
+            <div class="row d-flex flex-wrap justify-content-center">
+                <div class="col-mt-2 btn-al">
+                    <button type="button" class="btn btn-primary" onclick="checkAnswertwo('a')">A) Josoft</button>
+                </div>
+                <div class="col-mt-2 btn-al">
+                    <button type="button" class="btn btn-primary" onclick="checkAnswertwo('b')">B) Gosoft</button>
+                </div>
+                <div class="col-mt-2 btn-al">
+                    <button type="button" class="btn btn-primary" onclick="checkAnswertwo('c')">C) Kosoft</button>
+                </div>
+                <div class="col-mt-2 btn-al">
+                    <button type="button" class="btn btn-primary" onclick="checkAnswertwo('d')">D) Yosoft</button>
+                </div>
+            </div>
+            <br>
+            <center>
+                <p id="resulttwo"></p>
+            </center>
+        </div>
+    </div>
+
+
+    <div class="container fluid">
+        <div class="text-center btn-al ">
+
+            <h3 id="score">คะแนนรวม</h3>
+            <!-- <h4 id="score"></h4> -->
+        </div>
+    </div>
+
+
+    <div style="margin-bottom:10%"></div>
+
+
+
+
+</body>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+<script src="index.js"></script>
+
+</html>
